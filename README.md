@@ -1,5 +1,3 @@
-
-```markdown
 # Drone Discover 🚁🔍
 
 **Drone Discover** is an AI-powered computer vision project designed to detect visual pollution and identify structural/building non-compliances from aerial and drone imagery using **YOLOv5**.
@@ -25,7 +23,6 @@ Drone-Discover/
 ├── Dataset/                        # Annotated aerial image datasets (YOLO format)
 ├── Presentation & Report & Poster/ # Project documentation, poster, and presentation slides
 └── runs/train/exp5/                # Training output runs (YOLO weights, evaluation metrics, and result images)
-
 ```
 
 ---
