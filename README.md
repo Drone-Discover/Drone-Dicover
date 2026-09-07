@@ -25,9 +25,43 @@ Drone-Discover/
 └── runs/train/exp5/                # Training output runs (YOLO weights, evaluation metrics, and result images)
 
 
-🚀 Getting StartedClone the repository:Bashgit clone [https://github.com/EngEsraa1/Drone-Discover.git](https://github.com/EngEsraa1/Drone-Discover.git)
+🎯 Target Classes (Data/coco.yaml)
+The model is configured to detect and label the following visual pollution classes:
+
+0: Garbage
+
+1: Cans
+
+2: Trash
+
+3: Glass
+
+4: Metals
+
+5: Grafitti
+
+6: Water
+
+🛠️ Tech Stack & Requirements
+Language: Python
+
+Framework: YOLOv5 (Ultralytics), PyTorch
+
+Computer Vision & Utilities: OpenCV, Matplotlib, NumPy, Pandas, PyYAML
+
+🚀 Getting Started
+1- Clone the repository:
+git clone [https://github.com/EngEsraa1/Drone-Discover.git](https://github.com/EngEsraa1/Drone-Discover.git)
 cd Drone-Discover
-Install requirements:Bashpip install -r requirements.txt
-Train Model:Bashpython Code/train.py --img 640 --batch 16 --epochs 50 --data Data/coco.yaml --weights yolov5s.pt
-Run Inference:Bashpython Code/detect.py --weights runs/train/exp5/weights/best.pt --source Dataset/
-📊 Evaluation & OutputAll trained model weights (best.pt, last.pt), performance curves ($F1$, $Precision$, $Recall$, Confusion Matrix), and sample prediction grids are organized inside the runs/train/exp5/ directory.
+
+2- Install requirements:
+pip install -r requirements.txt
+
+3- Train Model:
+python Code/train.py --img 640 --batch 16 --epochs 50 --data Data/coco.yaml --weights yolov5s.pt
+
+4- Run Inference:
+python Code/detect.py --weights runs/train/exp5/weights/best.pt --source Dataset/
+
+📊 Evaluation & Output
+All trained model weights (best.pt, last.pt), performance curves ($F1$, $Precision$, $Recall$, Confusion Matrix), and sample prediction grids are organized inside the runs/train/exp5/ directory.
